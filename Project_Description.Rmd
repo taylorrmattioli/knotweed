@@ -1,0 +1,37 @@
+---
+title: "Project Description"
+author: "Taylor Reid Mattioli"
+date: "2024-02-15"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Project Background
+
+Various knotweed species, originally native to Asia, have become invasive in Europe, North America, Australia, and New Zealand due to escape from cultivation in 1800s (Wilson, 2007). These species, known collectively as the “knotweed complex,” include Japanese knotweed (Fallopia japonica), Giant knotweed (Fallopia sachalinensis), and the hybrid Bohemian knotweed (Fallopia x bohemica) (Gillies, 2016). These species disrupt native ecosystems by outcompeting native plants (Gillies, 2016), causing soil erosion (Matte et al., 2022), and altering soil chemistry (Murrell et al., 2011). They grow quickly, tolerate many soil types, and thrive in disturbed habitats, making them ideal invaders (Gillies, 2016). Moreover, despite initial beliefs, the complex reproduces both asexually and sexually (Bailey, 1994; Gammon et al., 2007). Efforts to eradicate the invasion with physical and herbicidal removal techniques have proven costly, time intensive, and largely unsuccessful (Delbart et. al, 2012). Additionally, correct visual identification of knotweed species is extremely difficult, and managers note that field guides for visual identification of knotweed species, which focus on using leaf morphology for species identification, are not helpful and/or are not representative of knotweed populations they observe in the field. Thus, it is important to investigate whether the flower morphology of knotweed plants (i.e., the shape, size, and sex organs present on flowers) can be used for more accurate identification and, therefore, more efficient management. 
+
+# Goals for this semester
+
+1. Create an R script for flower sex organ presence now that I have recorded observations for all the sample vials.
+2. Merge files from other collaborators (i.e., ploidy, latitude, longitude, germination, etc.)
+3. Create R script to plot metrics of flower morphology and species over the lat/long gradient.
+4. Create R script to plot metrics of flower morphology by species to identify trends.
+5. Create an all encompassing RMarkdown document (and perhaps even a website) with all of the above materials.
+6. _Learn new R practices_
+
+# Important documents
+1. The master .csv of all flower morphology observations to date
+2. The master .csv of flower morphology observations combined with ploidy and geospatial data.
+3. The metadata for the master .csv
+
+```{r}
+knotweed<-read.csv("/Users/taylormattioli/Desktop/EVS_591/knotweed/Knotweed_Data_original_combined.csv")
+head(knotweed)
+```
+```{r}
+metadata<-read.csv("/Users/taylormattioli/Desktop/EVS_591/knotweed/Knotweed_metadata_NOT_combined.csv")
+summary(metadata)
+```

@@ -1,0 +1,9 @@
+﻿Variable,Definition
+Pot ID,The unique identifer assigned to each vial of flowers in the form of: State.Population.Plant#
+Rep,"The number flower being evaluated (i.e., rep = 1 means first flower being evaluated in the vial)"
+Pistil Present,"1 = Both a developed ovary and stigma are present, the pistil clearly extends past the surrounding stamen structures; 4a = stigma is present on a 3 segmented, sunken ovary, but smaller than other, clearly visible ovaries, and the pistil is even with the surrounding stamen structures; 4b = no stigma is present, but a very small, 3-segmented sunken ovary structure is present, and the pistil is clearly shorter than the surrounding stamen structures; 0 = no ovary and/or stigma is/are present"
+Stamen Present,"1 = Both develeoped filaments and anthers are present (i.e., not curled or furled) and extend past the length of the pistil structure; 0 = undeveloped filaments and anthers are present (i.e, curled or furled, lacking anthers) and/or the structures do not extend past the length of the pistil structure"
+Anthers Present,"1 = Developed anther structures are present on the flower, 0 = undeveleoped anther structures are present on the flower"
+# of tepals,The number of tepals present on the flower.
+Tepal size,The measure of the flower opening in mm to the nearest .5 mm
+Notes,"Additional helpful information about the flower or any of the structures (i.e., damage, anomalies, etc.)"
